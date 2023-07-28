@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/include_alarm_detail_fragment"
+            layout="@layout/include_top"/>
+
+        <TextView
+            android:id="@+id/tv_alarm_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警详情"
+            style="@style/CommonTextView"/>
+
+        <Button
+            android:id="@+id/btn_to_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="查看视频"
+            style="@style/CommonButton"/>
+    </LinearLayout>
+</layout>

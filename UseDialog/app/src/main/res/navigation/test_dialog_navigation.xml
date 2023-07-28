@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/test_dialog_navigation"
+    app:startDestination="@id/alarmDialogFragment">
+
+    <fragment
+        android:id="@+id/alarmDialogFragment"
+        android:name="com.example.usedialog.ui.AlarmDialogFragment"
+        android:label="AlarmDialogFragment" />
+    <action
+        android:id="@+id/action_global_alarmDialogFragment"
+        app:destination="@id/alarmDialogFragment" />
+</navigation>
