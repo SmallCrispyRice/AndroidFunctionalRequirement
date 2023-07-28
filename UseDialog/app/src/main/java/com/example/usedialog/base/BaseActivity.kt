@@ -27,7 +27,7 @@ open class BaseActivity: AppCompatActivity() {
         const val TAG = "BaseActivity"
     }
     private var alarmCount = 0
-    private val handler = Handler(Looper.myLooper()!!)//这里感觉不对劲
+    private val handler = Handler(Looper.myLooper()!!)//需要更进一步了解Handler原理
     //为了关闭通知，manager放在外面
     private val notificationId = 1
     private var alarmDialogFragment: AlarmDialogFragment? = null
