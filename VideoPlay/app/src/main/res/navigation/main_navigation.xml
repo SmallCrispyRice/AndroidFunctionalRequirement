@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.video_play.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_exoVideoActivity"
+            app:destination="@id/exoVideoActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.video_play.ui.TestFragment"
+        android:label="TestFragment" />
+    <activity
+        android:id="@+id/exoVideoActivity"
+        android:name="com.example.video_play.ui.ExoVideoActivity"
+        android:label="ExoVideoActivity" />
+</navigation>

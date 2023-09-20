@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_video_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="180dp"-->
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:resize_mode="fit"
+            app:controller_layout_id="@layout/exo_playback_control_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:surface_type="texture_view" />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_screenshot"-->
+<!--            style="@style/CommonButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="截图"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/player_view" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_double_speed"-->
+<!--            style="@style/CommonButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="2倍速"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btn_screenshot" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_volume"-->
+<!--            style="@style/CommonButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="静音"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btn_double_speed" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
