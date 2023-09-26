@@ -292,9 +292,6 @@ class ExoVideoActivity : BaseActivity() {
                                     GESTURE_TYPE_PROGRESS ->{
                                         exoPlayer?.seekTo(seekToPosition)
                                     }
-                                    GESTURE_TYPE_VOLUME ->{//手势松手时，将音量赋值给音量进度条
-                                        vpLayout.setProgress(exoPlayer?.volume?:1f)
-                                    }
                                 }
                                 //手指抬起时候，一些界面消失
                                 if (isVisibleSetView) {//设置界面存在，先处理设置界面
